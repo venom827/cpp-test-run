@@ -9,7 +9,7 @@ int main () {
 
     for (int i = 0; i <= n; i++){
         string s;
-        getline(cin , s);
+        getline(cin , s); // The input is of form 1 1 0 not 110 therefore this works
         for (int j = 0; j < s.length(); j++){
             int z = j+1;
             for ( z ; z < s.length(); z++){
