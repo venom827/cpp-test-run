@@ -14,14 +14,15 @@ int main() {
         for (int j = i+1; j < arr_length; j++){
             if (arr[i] == arr[j]){
                 counter++;
+                break;
                 
             }
             
             
         }
-        // if (counter == 3){
-        //         break;
-        //     }
+        if (counter == 3){
+                break;
+            }
 
     }
     cout << counter;
