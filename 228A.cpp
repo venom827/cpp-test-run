@@ -4,26 +4,26 @@ using namespace std;
 
 int main() {
 
-    int counter = 0;
-    string s;
-    getline(cin , s);
-    for (int j = 0; j < s.length(); j++){
-        for (int i = j+1; i < s.length(); i++){
-            if (s[i] == s[j]){
-                counter++;
-            }
-            if (s[i] == s[j] && s[i] == s[1]){
-                counter--;
-            }
-            if (counter == 3){
-                break;
-            }
+    int s1 , s2 , s3 , s4 , counter , arr_length;
+    counter = 0;
+    cin >> s1 >> s2 >> s3 >> s4;
+    int arr[4] = {s1 , s2 , s3 , s4};
+    arr_length = sizeof(arr)/sizeof(s1);
 
+    for (int i = 0; i < arr_length; i++){
+        for (int j = i+1; j < arr_length; j++){
+            if (arr[i] == arr[j]){
+                counter++;
+                
+            }
+            
+            
         }
-        
+        // if (counter == 3){
+        //         break;
+        //     }
+
     }
     cout << counter;
-
-
     return 0;
 }
