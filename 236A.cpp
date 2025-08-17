@@ -13,6 +13,7 @@ int main(){
         for ( j; j < userName.length(); j++ ){
             if (userName[i] == userName[j]){
                 counter--;
+                break;
             }
         }
     }
