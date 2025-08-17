@@ -11,7 +11,7 @@ allowing us to get the value of distinct characters.
 
 As you might have guessed, this gives rise to an edgecase of when there are more than 2 usage of the same character 
 in the string or userName. For that, I did a very simple thing that took care of it. 
-You will find the comments below
+You will find the comments below.
 */
 int main(){
 
