@@ -6,8 +6,8 @@ int main(){
     int n , m, counter;
     counter = 0;
     cin >> n >> m;
-    for (int a = 0; a < n; a++){
-        for (int b = 0; b < m; b++){
+    for (int a = 0; a <= 1000; a++){
+        for (int b = 0 ; b <= 1000; b++){
             if (a*a + b == n && a + b*b == m){
                 counter++;
             }
