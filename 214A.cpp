@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
-
+/*
+My solution to 214A. It's bruteforce as you can see. Not much to add here
+*/
 int main(){
 
     int n , m, counter;
