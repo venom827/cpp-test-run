@@ -53,18 +53,32 @@ int main(){
     int counter;
     for (int i = 0; i < 3; i++){
         counter++;
-        for(int j = 1; j < 3; j++){
+        for(int j = 0; j < 3; j++){
             if(pnts[i][0] == pnts[j][0] && pnts[i][0] > pnts[2][0]){
+                pnt[0] = abs(pnts[i][0] + row_distance);
+            }
+            else if(pnts[i][0] == pnts[j][0] && pnts[i][0] < pnts[2][0]){
                 pnt[0] = abs(pnts[i][0] - row_distance);
             }
-            else if (pnts[i][1] == pnts[j][1] && pnts[i][1] > pnts[2][1]){
+            else if (pnts[i][0] == pnts[j][0] && pnts[i][0] > pnts[1][0]){
+                pnt[0] = abs(pnts[i][0] + row_distance);
+
+            }
+            else if (pnts[i][0] == pnts[j][0] && pnts[i][0] < pnts[1][0]){
+                pnt[0] = abs(pnts[i][0] - row_distance);
+
+            }
+            else if(pnts[i][1] == pnts[j][1] && pnts[i][1] < pnts[2][1]){
+                pnt[1] = abs(pnts[i][1] + column_distance);
+            }
+            else if(pnts[i][1] == pnts[j][1] && pnts[i][1] > pnts[2][1]){
+                pnt[1] = abs(pnts[i][1] - column_distance);
+            }
+            else if (pnts[i][1] == pnts[j][1] && pnts[i][1] < pnts[1][0]){
                 pnt[1] = abs(pnts[i][1] - column_distance);
 
             }
-            else if(pnts[i][0] == pnts[j][0] && pnts[i][0] < pnts[2][0]){
-                pnt[0] = abs(pnts[i][0] + row_distance);
-            }
-            else if (pnts[i][1] == pnts[j][1] && pnts[i][1] < pnts[2][1]){
+            else if (pnts[i][1] == pnts[j][1] && pnts[i][1] > pnts[1][0]){
                 pnt[1] = abs(pnts[i][1] + column_distance);
 
             }
