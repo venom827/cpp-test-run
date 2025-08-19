@@ -1,3 +1,6 @@
-if (s[i] < s[i+1]){
-        //     counter == s[i+1];
-        // }
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    cout << 'p'>'s';}
