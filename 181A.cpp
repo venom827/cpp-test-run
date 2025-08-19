@@ -94,6 +94,7 @@ int main(){
         if (pnts[i][1] == pnts[i+2][1])  {
             pnt_4[1] = pnts[i+1][1] - column_distance;
         }     
+        
     }
 
     cout << pnt_4[0]<< " " << pnt_4[1];
