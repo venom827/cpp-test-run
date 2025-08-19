@@ -75,12 +75,14 @@ int main(){
             column_distance *= -1;
         }
     }
+    
      if (pnt_2[1] == pnt_3[1]){
         column_distance = pnt_3[1] - pnt_1[1];
         if (column_distance <= 0){
             column_distance *= -1;
         }
     }
+
      if (pnt_1[1] == pnt_3[1]){
         column_distance = pnt_3[1] - pnt_2[1];
         if (column_distance <= 0){
@@ -88,13 +90,14 @@ int main(){
         }
     }
     for (int i = 0; i < 3; i++){
+
         if (pnts[i][0] == pnts[i+1][0]){
             pnt_4[0] = pnts[i-1][0] - row_distance; 
         }
         if (pnts[i][1] == pnts[i+2][1])  {
             pnt_4[1] = pnts[i+1][1] - column_distance;
         }     
-        
+
     }
 
     cout << pnt_4[0]<< " " << pnt_4[1];
