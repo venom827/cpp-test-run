@@ -35,57 +35,62 @@ int main(){
         }
     }
 
-    for (int i = 0; i < n; i++){
-        for (int j = i+1; j <= m; j++){
+
+    for (int i = 0; i < 2; i++){
+        for (int j = i+1; j < 3; j++){
             if (pnts[i][0] == pnts[j][0]){
                 column_length = abs (pnts[i][1] - pnts[j][1]);
             }
         }
     }
 
-    for (int i = 0; i < 3; i++){
+    for (int i = 0; i < 2; i++){
         int j;
-        for( j = 1; j < 3; j++){
-           if (pnts[i][0] == pnts[j][0] && pnts[i][0] > pnts[i-1][0]){
-                pnt[0] = pnts[i-1][0];
+        for( j = i+1; j < 3; j++){
+           if (pnts[i][0] == pnts[j][0] && pnts[i][0] > pnts[0][0]){
+                pnt[0] = pnts[0][0];
                 break;
            }
-           else if (pnts[i][0] == pnts[j][0] && pnts[i][0] < pnts[i+2][0]){
-                pnt[0] = pnts[i+2][0];
+           else if (pnts[i][0] == pnts[j][0] && pnts[i][0] < pnts[2][0]){
+                pnt[0] = pnts[2][0];
                 break;
            }
         }
-        if (pnts[i][0] == pnts[j][0] && pnts[i][0] > pnts[i-1][0]){
+        if (pnts[i][0] == pnts[j][0] && pnts[i][0] > pnts[0][0]){
                 break;
         }
-        else if (pnts[i][0] == pnts[j][0] && pnts[i][0] < pnts[i+2][0]){
+        else if (pnts[i][0] == pnts[j][0] && pnts[i][0] < pnts[2][0]){
                 break;
         }
     }
-    for (int i = 0; i < 3; i++){
+    for (int i = 0; i < 2; i++){
         
         int j;
-        for(j = 1; j < 3; j++){
-           if (pnts[i][0] == pnts[j][0] && pnts[i][0] > pnts[i-1][0]){
-                if (pnts[i-1][1] > 1 ){
-                    pnt[1] = pnts[i-1][1]-column_length;
+        for(j = i+1; j < 3; j++){
+           if (pnts[i][0] == pnts[j][0] && pnts[i][0] > pnts[0][0]){
+                if (pnts[0][1] > 1 ){
+                    pnt[1] = pnts[0][1]-column_length;
                 }
-                else if(pnts[i-1][1] <= 1){
-                    pnt[1] = pnts[i-1][1]+column_length;
+                else if(pnts[0][1] <= 1){
+                    pnt[1] = pnts[0][1]+column_length;
                 }
                 break;
            }
-           else if (pnts[i][0] == pnts[j][0] && pnts[i][0] < pnts[i+2][0]){
-                if (pnts[i+2][1] > 1){
-                    pnt[1] = pnts[i+2][1] - column_length;
+           else if (pnts[i][0] == pnts[j][0] && pnts[i][0] < pnts[2][0]){
+                if (pnts[2][1] > 1){
+                    pnt[1] = pnts[2][1] - column_length;
                 }
-                else if (pnts[i+2][1] <= 1){
-                    pnt[1] = pnts[i+2][1] + column_length;
+                else if (pnts[2][1] <= 1){
+                    pnt[1] = pnts[2][1] + column_length;
                 }
+                break;
            }
         
         }
-        if(pnt[1] > 0 && pnt[1] < 100){
+        if(pnts[i][0] == pnts[j][0] && pnts[i][0] > pnts[0][0]){
+            break;
+        }
+        else if(pnts[i][0] == pnts[j][0] && pnts[i][0] < pnts[2][0]){
             break;
         }
     }
