@@ -100,9 +100,7 @@ int main(){
     }
     
 
-    
     cout << pnt[0]<< " " << pnt[1];
-
 
     return 0;
 }
