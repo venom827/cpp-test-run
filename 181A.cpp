@@ -12,6 +12,8 @@ int main(){
     int pnts[4][2];
     char arr[100][100];
     int column_length;
+
+    
     for (int i = 0; i < n; i++){
         string input;
         cin >> input;
