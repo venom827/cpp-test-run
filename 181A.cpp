@@ -13,7 +13,7 @@ int main(){
     char arr[100][100];
     int column_length;
 
-    
+
     for (int i = 0; i < n; i++){
         string input;
         cin >> input;
@@ -65,6 +65,8 @@ int main(){
                 break;
         }
     }
+
+
     for (int i = 0; i < 2; i++){
         
         int j;
@@ -98,8 +100,7 @@ int main(){
     }
     
 
-
-
+    
     cout << pnt[0]<< " " << pnt[1];
 
 
