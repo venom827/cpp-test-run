@@ -14,6 +14,7 @@ int main(){
     int middle_column_sum = 0;
     int middle_row_sum = 0;
     int good_element_sum;
+    //matrix constructor
     for (int i = 0; i < n; i++){
         for (int j = 0; j < n; j++){
             int input;
@@ -21,7 +22,8 @@ int main(){
             matrix[i][j] = input;
         }
     }
-
+//Below are loops for each of the4 good matrix elements
+//Notice I removed middle element from each and added it seperately bcz that keeps it consistent with the theme of q plus it's the common element
     for (int i = 0; i < n; i++){
         primary_diagnol_sum += matrix[i][i];
     }
