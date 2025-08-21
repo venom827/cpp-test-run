@@ -6,7 +6,7 @@ int main(){
     int n;
     cin >> n;
     int counter = n-1;
-    int matrix[100][100];
+    int matrix[101][101];
     int primary_diagnol_sum = 0;
     int secondary_diagnol_sum = 0;
     int middle_row = (n-1)/2;
@@ -37,10 +37,12 @@ int main(){
         counter--;
     }
     secondary_diagnol_sum -= matrix[middle_row][middle_column];
+
     for (int i = 0; i < n; i++){
         middle_row_sum += matrix[middle_row][i];
     }
     middle_row_sum -= matrix[middle_row][middle_column];
+
     for (int i = 0; i < n; i++){
         middle_column_sum += matrix[i][middle_column];
     }
