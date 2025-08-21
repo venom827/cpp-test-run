@@ -1,8 +1,11 @@
 #include <iostream>
 #include <string>
 using namespace std;
-
+//My solution to 181A. I simply constructed a matrix then ended up looking for points in same column and row
+//and assigned them to the coordinatres of 4th point
 int main(){
+
+    //All declarations
     char arr[100][100];
     int pnts[3][2];
     int n,m;
@@ -11,7 +14,7 @@ int main(){
     int r_coordinate;
     int c_coordinate;
     cin >> n >> m;
-
+// Matrix constructor
     for (int i = 0; i < n; i++){
         string input;
         cin >> input;
@@ -20,6 +23,8 @@ int main(){
             arr[i][j] = input[j];
         }
     }
+
+// Finding position of * or the 3 corners of the rectangle
     for (int i = 0; i < n; i++){
         for (int j = 0; j < m; j++){
             if (arr[i][j] == '*'){
@@ -29,6 +34,8 @@ int main(){
             }
         }
     }
+
+// For finding coords of row of 4th point
     for (int i = 0; i < 2; i++){
         for (int j = i+1; j < 3; j++){
             if (pnts[i][0] == pnts[j][0]){
@@ -40,7 +47,7 @@ int main(){
             }
         }
     }
-
+// For column
     for (int i = 0; i < 2; i++){
         int k = 0;
         for (int j = i+1; j < 3; j++){
@@ -54,11 +61,11 @@ int main(){
             }
             if (pnts[k][1] != pnts[i][1]){
                         break;
-                    }
+            }
         }
         if (pnts[k][1] != pnts[i][1]){
                         break;
-                    }
+        }
     }
 
         cout << r_coordinate << " " << c_coordinate;
