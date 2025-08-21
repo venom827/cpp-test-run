@@ -24,5 +24,6 @@ int main(){
     }
 
     cout << counter;
+    
     return 0;
 }
