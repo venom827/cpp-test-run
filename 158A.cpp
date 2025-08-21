@@ -19,7 +19,7 @@ int main(){
         if (score[0] == 0){
             break;
         }
-        if (position == k){
+        else if (position == k){
             break;
         }
         if (score[i] >= score[i+1]){
