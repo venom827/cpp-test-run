@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
-
+/*
+This is my solution to 158A. It's just obeying the conditions of the Qs nothing special in this
+*/
 int main(){
 
     int n,k;
