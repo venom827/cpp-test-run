@@ -4,7 +4,7 @@ using namespace std;
 int main(){
 
     int n,k;
-    int score[100];
+    int score[50];
     int input;
     int counter = 0;
     int position = 1;
@@ -14,24 +14,16 @@ int main(){
         cin >> input;
         score[i] = input;
     }
-
-    for (int i = 0; i < n-1; i++){
-        if (score[0] == 0){
-            break;
+    
+    for (int i = 0; i < n; i++){
+        int j;
+        if(score[i] >= score[k-1] && score[i] > 0){
+            
+        counter++;
         }
-        else if (position == k){
-            break;
-        }
-        if (score[i] >= score[i+1]){
-            counter++;
-        }
-        if (score[i] > score[i+1]){
-            position++;
-        }
-        
     }
-
     cout << counter;
+    
     
     return 0;
 }
