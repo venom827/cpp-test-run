@@ -1,6 +1,9 @@
 #include <iostream>
 #include <string>
 using namespace std;
+/*My solution to 231A. The program is too short to add much but as you can see I just broke 
+the loop at the point 2 same chars are found and those are '1'
+*/
 int main () {
 
     int n;
