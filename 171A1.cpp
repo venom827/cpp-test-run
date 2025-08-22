@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
-
+/*This is my solution to 171A1/2. Both are same Qs just A2 has test cases that test the 
+array limits*/
 int main(){
     
     int n;
@@ -25,7 +26,7 @@ int main(){
     }
 
 
-//Below are loops for each of the4 good matrix elements
+//Below are loops for each of the good matrix elements
 //Notice I removed middle element from each and added it seperately bcz that keeps it consistent with the theme of q plus it's the common element
     for (int i = 0; i < n; i++){
         primary_diagnol_sum += matrix[i][i];
