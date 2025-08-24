@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 using namespace std;
+//my sol to 71A. I dont think this is explainable. Its pretty straightforward
 int main(){
     int n;
     int counter1 = 0;
