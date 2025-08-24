@@ -1,22 +1,49 @@
 #include <iostream>
+#include <vector>
+#include<string>
 using namespace std;
 
 void task(string &a, string b, string c){
-    int right_pointer = c.length();
+    int right_pointer = a.length();
     int left_pointer = 0;
     for (int i=0;i<c.length();i++){
         if (c[i] == 'D'){
-            a.insert(right_pointer,1,b[i])
+            a.insert(right_pointer++,1,b[i]);
         }
         else if (c[i] == 'V'){
-            a.insert(left_pointer,1,b[i])
+            a.insert(left_pointer,1,b[i]);
+            right_pointer++;
         }
     }
 }
 
 int main(){
+    int t ;
+    
+    int n,m;
+    string a,b,c;
+    cin >> t;
+    vector <string> values;
+    for (int i=0;i<t;i++){
+        cin >> n;
+        // cin >> ws;
+        cin >> a;
+        // cin >> ws;
+        cin >> m;
+        // cin >> ws;        
+        cin >> b;
+        // cin >> ws;
+        cin >> c;
+        // cin >> ws;
+
+        task(a,b,c);
+        values.push_back(a);
+
+    }
 
 
-
+    for (string i:values){
+        cout << i <<endl;
+    }
     return 0;
 }
