@@ -2,7 +2,8 @@
 #include <vector>
 #include<string>
 using namespace std;
-
+//My solution to 2132A. Used two pointers to simply insert pnts where I wanted them to. I increment value
+//of right_pointer in both loops bcz size of a changes in both places
 void task(string &a, string b, string c){
     int right_pointer = a.length();
     int left_pointer = 0;
