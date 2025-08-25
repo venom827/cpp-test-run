@@ -5,6 +5,8 @@ int main(){
 
     int matrix[5][5];
     int row,column,distance;
+
+
     for (int i=0;i<5;i++){
         for (int j=0;j<5;j++){
             int input;
@@ -24,7 +26,7 @@ int main(){
         
     }
 
-     int total_steps = (abs(row-3)) + (abs(column-3));
+    int total_steps = (abs(row-3)) + (abs(column-3));
 
     cout << total_steps;
 
