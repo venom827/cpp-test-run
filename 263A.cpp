@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-
+//My solution to 263A. Since one step is just 1 unit of distance from point 3,3 I used the abs value to get the answer
 int main(){
 
     int matrix[5][5];
