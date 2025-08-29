@@ -1,0 +1,8 @@
+# Ignore compiled files
+*.exe
+*.out
+*.o
+*.obj
+*.prob
+.vscode/
+.cph/
