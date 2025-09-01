@@ -3,6 +3,7 @@ using namespace std;
 //My solution to 50A. Easy problem not even iterations required
 int main(){
 
+    
     int m,n;
     cin >> n>>m;
     int size = m*n;
