@@ -2,28 +2,25 @@
 #include<vector>
 #include <iterator>
 #include<algorithm>
+typedef long long ll;
 using namespace std;
 
 int main(){
 
     int t;
     cin>>t;
-    vector<int>values;
-    vector<int>copy_val;
-    for (int i=0;i<t;i++){
-        int n,m,cakes=0;
-        cin>>n>>m;
-
-        for (int j=0;j<n;j++){
-            int cut;
-            cin>>cut;
-            values.push_back(cut);
-        }
-        copy_val = values;
-        for (int j=0;j<m;j++){
-           
-        }
-        cout<<cakes;
+    
+    ;
+    while(t--){
+        
+        int m,n;
+        ll sum = 0;
+        cin >> n >> m;
+        vector<int> ovenP(n);
+        for (int i=0;i<n;i++) cin>>ovenP[i];
+        sort(ovenP.begin(),ovenP.begin()+n,greater<int>());
+        for (int i=0;i<n;i++) sum += 1ll*ovenP[i]*max(0,m-i);
+        cout<<sum<<'\n';
     }
 
 
