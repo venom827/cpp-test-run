@@ -6,13 +6,11 @@ int main(){
 
     int n,m;
     cin>>n>>m;
-    if ((n*m)%2==0){
-        cout<<"Malvika";
-    
-    }
-    else{
+    if (min(n,m)%2){
         cout<<"Akshat";
     }
-
+    else{
+        cout<<"Malvika";
+    }
     return 0;
 }
