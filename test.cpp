@@ -1,8 +1,15 @@
 #include <iostream>
-#include <cmath>
+#include <vector>
+
+typedef long long ll;
+using namespace std;
 int main(){
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout<<(2);
 
-    int c = std::round(2.5);
-    std::cout << c;
 
+
+
+    return 0;
 }
